@@ -1,0 +1,6 @@
+1|Monokrom|Tulus|10
+2|Komang|Raim Laode|15
+3|Sial|Mahalini|9
+4|Blue|Yung Kai|3
+5|Hati Hati Di Jalan|Tulus|20
+6|sandaran hati|Letto|1

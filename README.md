@@ -1,14 +1,36 @@
+```text
+██╗  ██╗███████╗██╗      ██████╗ ███╗   ███╗██████╗  ██████╗ ██╗  ██╗
+██║ ██╔╝██╔════╝██║     ██╔═══██╗████╗ ████║██╔══██╗██╔═══██╗██║ ██╔╝
+█████╔╝ █████╗  ██║     ██║   ██║██╔████╔██║██████╔╝██║   ██║█████╔╝
+██╔═██╗ ██╔══╝  ██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██║   ██║██╔═██╗
+██║  ██╗███████╗███████╗╚██████╔╝██║ ╚═╝ ██║██║     ╚██████╔╝██║  ██╗
+╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝
+
+                             T I G A
+```
 # 🎵 DRAG Music System
 
 DRAG Music System adalah aplikasi manajemen musik berbasis bahasa C yang dikembangkan sebagai tugas kelompok mata kuliah Struktur Data dan Algoritma.
-
 Aplikasi ini memungkinkan pengguna untuk mengelola katalog lagu, melakukan pencarian, mengatur playlist, melihat riwayat pemutaran, serta mendapatkan rekomendasi lagu berdasarkan data yang tersedia.
 
 ---
 
-## 📌 Fitur Utama
+## 🎯 Tujuan Proyek
 
-### 🎶 Manajemen Lagu
+Proyek ini dibuat untuk mengimplementasikan konsep-konsep Struktur Data dan Algoritma dalam studi kasus sistem manajemen musik, meliputi:
+
+- Stack
+- Searching
+- Linked List
+- File Processing
+- Binary Search Tree
+- Modular Programming dalam Bahasa C
+
+---
+
+## 📌 FITUR UTAMA
+
+### 🎵 Manajemen Lagu
 - Menambahkan lagu baru
 - Menampilkan seluruh katalog lagu
 - Mengubah informasi lagu
@@ -29,7 +51,7 @@ Aplikasi ini memungkinkan pengguna untuk mengelola katalog lagu, melakukan penca
 - Menyimpan riwayat lagu yang diputar
 - Menampilkan history pemutaran
 
-### ⭐ Recommendation
+### 📊 Recommendation
 - Memberikan rekomendasi lagu berdasarkan data yang tersedia
 
 ---
@@ -91,13 +113,7 @@ Menggunakan Makefile:
 make
 ```
 
-Atau menggunakan GCC:
-
-```bash
-gcc main.c src/*.c -o drag
-```
-
-### Menjalankan Program
+### Jalankan Program
 
 ```bash
 ./drag
@@ -124,28 +140,14 @@ gcc main.c src/*.c -o drag
 
 ---
 
-## 🎯 Tujuan Proyek
-
-Proyek ini dibuat untuk mengimplementasikan konsep-konsep Struktur Data dan Algoritma dalam studi kasus sistem manajemen musik, meliputi:
-
-- Binary Search Tree (BST)
-- Linked List
-- Stack
-- Searching
-- File Processing
-- Modular Programming dalam Bahasa C
-
----
-
 ## 👥 Tim Pengembang
 
-| Nama | Peran |
-|--------|--------|
-| Anggota 1 | Project Leader |
-| Anggota 2 | BST & Catalog Management |
-| Anggota 3 | Playlist Management |
-| Anggota 4 | Search & Recommendation |
-| Anggota 5 | History & File Handling |
+| User | Nama | Peran |
+|------|------|--------|
+| Jawzy04 | Ibnul Jawzy | BST Catalog Management & Search Feature |
+| Khoirotun Hisan Br.B | Khoirotun Hisan | Recommendation System & History Management |
+| yuenothingelse | Mirza Nur Akhyar | Main Program, Menu System & Playlist Management |
+| salwafdhlaa124-creator | Salwa Fadhilla | File I/O, Data Definition, Testing & Documentation |
 
 ---
 

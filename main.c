@@ -97,6 +97,15 @@ int main(){
                 catalogRoot
             );
             break;
+
+        case 0:
+        printf("\nTerima kasih telah menggunakan DRAG Music System.\n");
+        break;
+
+        default:
+        printf("\n[ERROR] Menu tidak ditemukan!\n");
+        printf("Silakan pilih menu 0 - 11.\n");
+        break;
         }
 
     }while(choice != 0);

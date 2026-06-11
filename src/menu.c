@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
 
 #include "../include/history.h"
 #include "../include/menu.h"
@@ -7,6 +9,32 @@
 #include "../include/search.h"
 #include "../include/bst.h"
 #include "../include/playlist.h"
+
+int inputId()
+{
+    char buffer[100];
+
+    fgets(buffer, sizeof(buffer), stdin);
+
+    buffer[strcspn(buffer, "\n")] = 0;
+
+    if(strlen(buffer) == 0)
+    {
+        printf("Input ID harus berupa angka!\n");
+        return -1;
+    }
+
+    for(int i = 0; buffer[i] != '\0'; i++)
+    {
+        if(!isdigit(buffer[i]))
+        {
+            printf("Input ID harus berupa angka!\n");
+            return -1;
+        }
+    }
+
+    return atoi(buffer);
+}
 
 void addSongMenu(){
 
@@ -16,8 +44,12 @@ void addSongMenu(){
     char artist[100];
 
     printf("\nID : ");
-    scanf("%d",&id);
-    getchar();
+id = inputId();
+
+if(id == -1)
+{
+    return;
+}
 
     if(
         searchById(
@@ -129,12 +161,14 @@ void updateSongMenu(){
         "ID lagu : "
     );
 
-    scanf(
-        "%d",
-        &id
-    );
+    id = inputId();
 
-    getchar();
+if(id == -1)
+{
+    return;
+}
+
+    
 
     SongNode *song =
         searchById(
@@ -198,12 +232,14 @@ void deleteSongMenu(){
         "ID Lagu : "
     );
 
-    scanf(
-        "%d",
-        &id
-    );
+    id = inputId();
 
-    getchar();
+if(id == -1)
+{
+    return;
+}
+
+    
 
     SongNode *song =
         searchById(
@@ -218,7 +254,7 @@ void deleteSongMenu(){
         );
 
         return;
-    }
+    } 
 
     
     //Hapus semua referensi
@@ -250,12 +286,12 @@ void addPlaylistMenu(){
         "ID Lagu : "
     );
 
-    scanf(
-        "%d",
-        &id
-    );
+    id = inputId();
 
-    getchar();
+if(id == -1)
+{
+    return;
+}
 
     SongNode *song =
         searchById(
